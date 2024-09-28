@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Disease Prediction Result</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .result-container {
+        margin-top: 50px;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .result-heading {
+        color: #007bff;
+      }
+      .result-message {
+        font-size: 1.5rem;
+        margin-top: 20px;
+      }
+      .back-button {
+        margin-top: 30px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="result-container">
+        <h1 class="result-heading text-center">Prediction Result</h1>
+        <h3 class="result-message text-center mt-4">{{ result }}</h3>
+        <hr />
+        <h5 class="text-center">What This Means:</h5>
+        <p class="text-center">
+          {% if result == 'Heart Disease Detected' %} This indicates a higher
+          likelihood of heart disease based on the input data. It is recommended
+          to consult a healthcare professional for further evaluation and
+          possible testing. {% else %} This indicates a lower likelihood of
+          heart disease based on the input data. However, maintaining a healthy
+          lifestyle is always encouraged. {% endif %}
+        </p>
+        <a href="/" class="btn btn-primary back-button"
+          >Go Back to Prediction Form</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
