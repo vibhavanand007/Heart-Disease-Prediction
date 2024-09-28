@@ -19,7 +19,15 @@ The Heart Disease Prediction project aims to utilize machine learning techniques
   - **Oldpeak**
   - **ST Slope**
   
-- **Model Training:** The project employs a `StandardScaler` on the training dataset to normalize feature values, which enhances the model's performance.
+- **Model Training:** 
+  - The project employs a **StandardScaler** to normalize the feature values, ensuring that all input data is on a similar scale. This step is crucial for many machine learning algorithms to perform optimally, as it helps improve convergence speed during model training.
+  - Various machine learning algorithms are explored, including:
+    - **Logistic Regression**: For its simplicity and effectiveness in binary classification tasks.
+    - **Decision Trees**: To capture non-linear relationships in the data.
+    - **Random Forests**: To leverage ensemble learning for improved accuracy and robustness.
+    - **Support Vector Machines (SVM)**: To find the optimal hyperplane for classification.
+  - Hyperparameter tuning is conducted using techniques such as **Grid Search** and **Cross-Validation** to identify the best model parameters. This ensures that the model is fine-tuned for maximum performance.
+  - The final model is evaluated based on various metrics, including **accuracy**, **precision**, **recall**, and **F1-score**, to ensure it meets the necessary standards for clinical application.
 
 - **User Interface:** A responsive web application is developed using Flask, HTML, and CSS. It allows users to easily input data and receive predictions. Each input feature includes notes with detailed descriptions to guide users in providing accurate information.
 
