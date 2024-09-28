@@ -10,7 +10,7 @@ The Heart Disease Prediction project aims to utilize machine learning techniques
   - **Age**
   - **Sex**
   - **Chest Pain Type**
-  - **Resting Blood Pressure*
+  - **Resting Blood Pressure**
   - **Cholesterol**
   - **Fasting Blood Sugar**
   - **Resting ECG Results**
@@ -24,6 +24,10 @@ The Heart Disease Prediction project aims to utilize machine learning techniques
 - **User Interface:** A responsive web application is developed using Flask, HTML, and CSS. It allows users to easily input data and receive predictions. Each input feature includes notes with detailed descriptions to guide users in providing accurate information.
 
 - **Target Variable:** The target column for prediction is **Heart Disease**, enabling the model to identify the likelihood of heart disease based on the provided input features.
+
+## Live Demo
+
+You can try the Heart Disease Prediction model by visiting the following link: [Try it](https://heart-disease-prediction-sglb.onrender.com)
 
 ## Conclusion
 
